@@ -1,7 +1,7 @@
 #MAZE CHALLENGE#
 
 #Maze should have a form like S___X,__XX_,__X__,_X__E,___X_  where
-#S=start,E=end,X=wall,_=path 
+#S=start,E=end,X=wall,_=path (find mazes in txt file)
 maze=str(input("Enter a maze:")) 
 
 #Split maze in rows (list of strings) 
@@ -41,3 +41,4 @@ def path(x,y):
 
 path(s[0],s[1])              #s[0] and s[1] is the starting point because s[x,y]="S"     
                          
+##references: http://www.laurentluce.com/posts/solving-mazes-using-python-simple-recursivity-and-a-search/ ###
