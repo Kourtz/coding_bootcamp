@@ -1,0 +1,12 @@
+C:\Users\Xristos\Desktop\AFDE\C#\Exercise_5\Exercise_5\bin\Debug\Exercise_5.exe.config
+C:\Users\Xristos\Desktop\AFDE\C#\Exercise_5\Exercise_5\bin\Debug\Exercise_5.exe
+C:\Users\Xristos\Desktop\AFDE\C#\Exercise_5\Exercise_5\bin\Debug\Exercise_5.pdb
+C:\Users\Xristos\Desktop\AFDE\C#\Exercise_5\Exercise_5\obj\Debug\Exercise_5.csprojResolveAssemblyReference.cache
+C:\Users\Xristos\Desktop\AFDE\C#\Exercise_5\Exercise_5\obj\Debug\Exercise_5.exe
+C:\Users\Xristos\Desktop\AFDE\C#\Exercise_5\Exercise_5\obj\Debug\Exercise_5.pdb
+C:\Users\Xristos\Desktop\AFDE\C#\Week1\Exercise_5\Exercise_5\bin\Debug\Exercise_5.exe.config
+C:\Users\Xristos\Desktop\AFDE\C#\Week1\Exercise_5\Exercise_5\obj\Debug\Exercise_5.exe
+C:\Users\Xristos\Desktop\AFDE\C#\Week1\Exercise_5\Exercise_5\obj\Debug\Exercise_5.pdb
+C:\Users\Xristos\Desktop\AFDE\C#\Week1\Exercise_5\Exercise_5\bin\Debug\Exercise_5.exe
+C:\Users\Xristos\Desktop\AFDE\C#\Week1\Exercise_5\Exercise_5\bin\Debug\Exercise_5.pdb
+C:\Users\Xristos\Desktop\AFDE\C#\Week1\Exercise_5\Exercise_5\obj\Debug\Exercise_5.csprojResolveAssemblyReference.cache
