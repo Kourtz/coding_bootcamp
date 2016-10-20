@@ -1,0 +1,6 @@
+C:\Users\Xristos\Desktop\AFDE\C#\Week2\Mobile\Mobile\bin\Debug\Mobile.exe.config
+C:\Users\Xristos\Desktop\AFDE\C#\Week2\Mobile\Mobile\bin\Debug\Mobile.exe
+C:\Users\Xristos\Desktop\AFDE\C#\Week2\Mobile\Mobile\bin\Debug\Mobile.pdb
+C:\Users\Xristos\Desktop\AFDE\C#\Week2\Mobile\Mobile\obj\Debug\Mobile.csprojResolveAssemblyReference.cache
+C:\Users\Xristos\Desktop\AFDE\C#\Week2\Mobile\Mobile\obj\Debug\Mobile.exe
+C:\Users\Xristos\Desktop\AFDE\C#\Week2\Mobile\Mobile\obj\Debug\Mobile.pdb
