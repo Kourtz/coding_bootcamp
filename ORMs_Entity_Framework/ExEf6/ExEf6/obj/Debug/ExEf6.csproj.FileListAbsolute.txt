@@ -1,0 +1,28 @@
+c:\users\xkour\onedrive\documents\visual studio 2015\Projects\ExEf6\ExEf6\bin\Debug\ExEf6.exe.config
+c:\users\xkour\onedrive\documents\visual studio 2015\Projects\ExEf6\ExEf6\bin\Debug\ExEf6.exe
+c:\users\xkour\onedrive\documents\visual studio 2015\Projects\ExEf6\ExEf6\bin\Debug\ExEf6.pdb
+c:\users\xkour\onedrive\documents\visual studio 2015\Projects\ExEf6\ExEf6\bin\Debug\EntityFramework.dll
+c:\users\xkour\onedrive\documents\visual studio 2015\Projects\ExEf6\ExEf6\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\xkour\onedrive\documents\visual studio 2015\Projects\ExEf6\ExEf6\bin\Debug\EntityFramework.xml
+c:\users\xkour\onedrive\documents\visual studio 2015\Projects\ExEf6\ExEf6\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\xkour\onedrive\documents\visual studio 2015\Projects\ExEf6\ExEf6\obj\Debug\ExEf6.csprojResolveAssemblyReference.cache
+c:\users\xkour\onedrive\documents\visual studio 2015\Projects\ExEf6\ExEf6\obj\Debug\ExEf6.exe
+c:\users\xkour\onedrive\documents\visual studio 2015\Projects\ExEf6\ExEf6\obj\Debug\ExEf6.pdb
+c:\users\xkour\onedrive\documents\visual studio 2015\Projects\ExEf6\ExEf6\obj\Debug\ExEf6.Migrations.MyInitialCreate.resources
+c:\users\xkour\onedrive\documents\visual studio 2015\Projects\ExEf6\ExEf6\obj\Debug\ExEf6.csproj.GenerateResource.Cache
+c:\users\xkour\onedrive\documents\visual studio 2015\Projects\ExEf6\ExEf6\obj\Debug\ExEf6.Migrations.MySecondCreate.resources
+c:\users\xkour\onedrive\documents\visual studio 2015\Projects\ExEf6\ExEf6\obj\Debug\ExEf6.Migrations.MyThirdCreate.resources
+C:\Users\xkour\Desktop\AFDE\ORMs - Entity Framework\ExEf6\ExEf6\bin\Debug\ExEf6.exe.config
+C:\Users\xkour\Desktop\AFDE\ORMs - Entity Framework\ExEf6\ExEf6\obj\Debug\ExEf6.exe
+C:\Users\xkour\Desktop\AFDE\ORMs - Entity Framework\ExEf6\ExEf6\obj\Debug\ExEf6.pdb
+C:\Users\xkour\Desktop\AFDE\ORMs - Entity Framework\ExEf6\ExEf6\bin\Debug\ExEf6.exe
+C:\Users\xkour\Desktop\AFDE\ORMs - Entity Framework\ExEf6\ExEf6\bin\Debug\ExEf6.pdb
+C:\Users\xkour\Desktop\AFDE\ORMs - Entity Framework\ExEf6\ExEf6\bin\Debug\EntityFramework.dll
+C:\Users\xkour\Desktop\AFDE\ORMs - Entity Framework\ExEf6\ExEf6\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\xkour\Desktop\AFDE\ORMs - Entity Framework\ExEf6\ExEf6\bin\Debug\EntityFramework.xml
+C:\Users\xkour\Desktop\AFDE\ORMs - Entity Framework\ExEf6\ExEf6\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\xkour\Desktop\AFDE\ORMs - Entity Framework\ExEf6\ExEf6\obj\Debug\ExEf6.csprojResolveAssemblyReference.cache
+C:\Users\xkour\Desktop\AFDE\ORMs - Entity Framework\ExEf6\ExEf6\obj\Debug\ExEf6.Migrations.MyInitialCreate.resources
+C:\Users\xkour\Desktop\AFDE\ORMs - Entity Framework\ExEf6\ExEf6\obj\Debug\ExEf6.Migrations.MySecondCreate.resources
+C:\Users\xkour\Desktop\AFDE\ORMs - Entity Framework\ExEf6\ExEf6\obj\Debug\ExEf6.Migrations.MyThirdCreate.resources
+C:\Users\xkour\Desktop\AFDE\ORMs - Entity Framework\ExEf6\ExEf6\obj\Debug\ExEf6.csproj.GenerateResource.Cache
