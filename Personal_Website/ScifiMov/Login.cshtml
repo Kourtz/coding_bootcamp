@@ -1,0 +1,38 @@
+﻿@using WebMatrix.Data;
+
+@{
+    Layout = "~/Shared/Layout.cshtml";
+    PageData["Title"] = "Sci-fi Movies";
+
+}
+
+@{
+    var db = Database.Open("ScifiMov");
+    var command = "";
+    var search_request = "";
+    dynamic movies = "";
+    WebGrid grid;
+
+    if (IsPost)
+    {
+        search_request = Request.Form["search"];
+        command = @"Select * from Movies where Title like @search_request";
+    }
+    else
+    {
+        command = "Select * from Movies";
+    }
+    movies = db.Query(command);
+    grid = new WebGrid(source: movies, defaultSort: "Title", rowsPerPage: 100);
+}
+
+<main>
+    <form action=""  method="post">
+        <label for="search">Search</label>
+        <input id="search" type="search" value="@search_request">
+        <button type="submit">Apply</button>
+    </form>
+    <div>
+        @grid.GetHtml();
+    </div>
+</main>

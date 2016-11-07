@@ -1,0 +1,53 @@
+﻿@{
+    Layout = "~/Shared/Layout2.cshtml";
+    PageData["Title"] = "Blog";
+}
+
+<main>
+    <p>
+        <input type="search" placeholder="search">
+        <form method="post">
+        <select method="post">
+            <option value="Science">Science</option>
+            <option value="Technology">Technology</option>
+            <option value="Sports">Sports</option>
+        </select>
+        <form>
+    </p>
+            <article class="Sci">
+                    <h2>New theory explains how the moon got there</h2>
+                    <p>Science, <time datetime="2016-11-01">November 1st 2016</time></p><br>
+                    <img src="~/Shared/Image/moon.png" alt="Moon photo" height="150" width="200">
+                <section>
+                    <p>Earth's Moon is an unusual object in our solar system, and now there's a new theory to explain how it got where it is, which puts some twists on the current "giant impact" theory. The work is published Oct. 31 in the journal Nature.</p>
+                    <p>The Moon is relatively big compared to the planet it orbits, and it's made of almost the same stuff, minus some more volatile compounds that evaporated long ago. That makes it distinct from every other major object in the Solar System, said Sarah Stewart, professor of earth and planetary sciences at the University of California, Davis and senior author on the paper.</p>
+                    <p>"Every other body in the solar system has different chemistry," she said.</p>
+                    <p></p>
+                </section>
+            </article>
+             <article class="Tec">
+                        <h2>Making energy-harvesting computers reliable</h2>
+                        <p>Technology, <time datetime="2016-11-01">November 1st 2016</time></p><br>
+                        <img src="~/Shared/Image/tec.png" alt="Tec photo" height="150" width="200">
+                    <section>
+                        <p>A revolutionary and emerging class of energy-harvesting computer systems require neither a battery nor a power outlet to operate, instead operating by harvesting energy from their environment. While radio waves, solar energy, heat, and vibrations have the ability to power devices, harvested energy sources are weak leading to an "intermittent execution", with periodic power failures and unreliable behavior.</p>
+                        <p>
+                            <video width="420" height="280" controls>
+                                <source src="~/Shared/Image/video.mp4" type="video/mp4">
+                                <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+                                <track src="subtitles_el.vtt" kind="subtitles" srclang="el" label="Greek">
+                            </video>
+                        </p>
+                    </section>
+                </article>
+                <article class="Sport">
+                            <h2>European Cup roll of honour</h2>
+                            <p>Sports, <time datetime="2016-11-01">November 1st 2016</time></p><br>
+                            <img src="~/Shared/Image/champions.jpg" alt="Tec photo" height="150" width="200">
+                        <section>
+                            <p>From Real Madrid CF's trailblazing team of 1956 through some of the most famous and talented sides ever to grace the game, the European Cup has hosted the best football has to offer. Some of the most celebrated fixtures in football history have occurred in the competition's showpiece, from Madrid's 7-3 defeat of Eintracht Frankfurt in 1960 to AC Milan's 4-0 success against FC Barcelona in 1994 and Manchester United FC's late heroics against FC Bayern München in 1999.</p>
+                            <p>.....</p>
+                        </section>
+                    </article>
+</main>
+

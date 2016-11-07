@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Site-Home</title>
+    <meta name="description" content="My Awesome site!" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/CSS/StyleSheet.css">
+</head>
+<body>
+    @RenderPage("~/Shared/Header.cshtml")
+    <main>
+        @RenderBody()
+    </main>
+    @RenderPage("~/Shared/Footer.cshtml")
+</body>
+</html>
