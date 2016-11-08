@@ -1,0 +1,65 @@
+﻿@using ScifiMov;
+
+@{
+    Layout = "~/Shared/Layout.cshtml";
+    PageData["Title"] = "Login";
+
+    var db = new Model();
+    var log_username = "";
+    var log_email = "";
+    var users = db.Users.ToList();
+    User us;
+
+    if (IsPost)
+    {
+        log_username = Request.Form["username"];
+        log_email = Request.Form["email"];
+        us = db.Users.FirstOrDefault(x => x.UserName == log_username && x.Email == log_email);
+
+        if (us == null)
+        {
+            <text><div class="warns">Invalid username or email</div></text>
+        }
+        else
+        {
+            Session["use_id"] = us.UserName;     //first give session a value and then redirect
+            Response.Redirect("~/Home.cshtml");
+        }
+    }
+}
+
+@if (Session["use_id"] == null)
+{
+<main>
+    <h1>Login Form</h1>
+    <fieldset>
+        <legend>Personal Data</legend>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username" id="username" value="@log_username" required></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" id="email" value="@log_email" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="Login" value="Login"> <input type="reset" name="clear" value="Clear fields"></td>
+                </tr>
+            </table>
+            </form>
+</fieldset>
+</main>
+}
+else
+{
+    <div class="warns">
+        You are logged on<br />
+        <form action="~/Home.cshtml" method="post">
+            <input type="submit" name="Logout" value="Logout">
+        </form>
+    </div>
+}
+

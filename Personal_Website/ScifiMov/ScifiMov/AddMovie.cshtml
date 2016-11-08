@@ -1,0 +1,86 @@
+﻿@using ScifiMov;
+@{
+    Layout = "~/Shared/Layout.cshtml";
+    PageData["Title"] = "Add Movie";
+
+    //variables for new movie
+    var db = new Model();
+    var title = "";
+    var subcategory = "";
+    var date = "";
+    var director = "";
+    var link = "";
+    Movie new_movie;
+
+
+    if (IsPost)
+    {
+        title = Request.Form["title"];
+        subcategory = Request.Form["subcategory"];
+        date = Request.Form["date"];
+        DateTime date2 = new DateTime(int.Parse(date),1,1);
+
+        director = Request.Form["director"];
+        link = Request.Form["link"];
+        new_movie = db.Movies.FirstOrDefault(x => x.Title == title); //check if movie exists (we can check more than one)
+
+
+        if (new_movie==null)
+        {
+            var movie = new Movie()
+            {
+                Title = title,
+                SubCategory = subcategory,
+                DateRel = date2,
+                Director = director,
+                Link1 = link,
+                Link2=null,
+                Image=null,
+            };
+            db.Movies.Add(movie);
+            db.SaveChanges();
+            Response.Redirect("~/Home.cshtml");
+        }
+        else
+        {
+            <text><div class="warns">This movie is listed.<a href="~/AddMovie.cshtml"> Add</a> another movie.</div></text>
+        }
+    }
+}
+
+
+@if (Session["use_id"] != null)
+{
+<form class="new-movie" method="post">
+    <h2>New Sci-fi Movie</h2>
+        <table>
+            <tr>
+                <td>Title:</td>
+                <td><input type="text" name="title" id="title" value="@title" required></td>
+            </tr>
+            <tr>
+                <td>Sub-Category:</td>
+                <td><input type="text" name="subcategory" id="subcategory" value="@subcategory" required></td>
+            </tr>
+            <tr>
+                <td>Date Release:</td>
+                <td><input type="date" name="date" id="date" value="@date" required></td>
+            </tr>
+            <tr>
+                <td>Director:</td>
+                <td><input type="text" name="director" id="director" value="@director" required></td>
+            </tr>
+            <tr>
+                <td>Imdb link(optional):</td>
+                <td><input type="text" name="link" id="link" value="@link"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="Submit" value="Submit"> <input type="reset" name="clear" value="Clear fields"></td>
+            </tr>
+        </table>
+</form>
+}
+else
+{
+    <text><div class="warns">You are not register!</div></text>
+}

@@ -1,0 +1,83 @@
+﻿body {
+    background-color:antiquewhite;
+    font-size:16px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100px; background-color:black
+}
+
+img {height: 100px; display:inline-block;}
+header h1{color:#3966A2;}
+nav ul{ display:flex; list-style:none;}
+nav li{padding:10px;}
+
+
+header a{color:#3966A2; font-size:x-large}
+a:hover{color:white;}
+a:link{text-decoration:none;}
+
+footer{padding:30px; border-color:#3966A2; border-top-style:double; border-bottom-style:double; border-width:1px; height:50px; text-align:center; }
+
+
+div#day{display:flex; justify-content:flex-end; align-items:flex-end;margin:auto; padding: 6px 5px}
+div.form{display:block; text-align:center; position:center; padding: 6px 5px}
+div.form_add{display:flex; justify-content:center; align-items:center;margin:auto; padding: 6px 5px}
+div.warns{display:flex; justify-content:center; align-items:center;margin:auto; padding: 6px 5px}
+div.warns a{display:inline; color:#3966A2}
+div.reg{display:block; text-align:center; position:center; padding: 6px 5px}
+div.reg a{color:#3966A2;}
+
+.webgrid a:link
+{
+ text-decoration:none;
+ color:white;
+}
+
+
+
+
+.webgrid-table { 
+width: 70% ;border:none;
+padding: 6px 5px;
+margin:auto;
+text-align: left;
+background-color:antiquewhite;
+border-bottom: none;
+height: 80px;
+border-top:none;
+border-left:none;
+border-right:none;
+}
+
+.webgrid-header
+{
+padding: 6px 5px;
+text-align: center;
+color:white;
+text-decoration:none;
+background-color: black;
+border-bottom: 2px solid #3966A2;
+height: 40px;
+border-top: 2px solid #D6E8FF;
+border-left: 2px solid #D6E8FF;
+border-right: 2px solid #D6E8FF;
+}
+
+.webgrid-alternating-row 
+{
+    height: 30px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #d2d2d2;
+    border-left: 2px solid #D6E8FF;
+    border-right: 2px solid #D6E8FF;
+}
+
+
+
+fieldset {align-items:center; width:300px; margin:auto}
+fieldset.h1{text-align:center; margin:auto; margin-bottom:500px}

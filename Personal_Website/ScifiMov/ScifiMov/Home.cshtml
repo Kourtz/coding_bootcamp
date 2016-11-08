@@ -1,0 +1,111 @@
+﻿@using ScifiMov;
+
+@{
+    Layout = "~/Shared/Layout.cshtml";
+    PageData["Title"] = "Sci-fi Movies";
+
+    var db = new Model();
+    WebGrid grid;
+    var movies = db.Movies.Select(x => x);//from m in db.Movies select m;
+
+    //for categories
+    var subCat = db.Movies.Select(x => x.SubCategory).Distinct();
+
+    //var rates=from x in db.Movies join y in db.Rates on x.ID equals y.MovieID group x by x.ID into g
+    //          select new {}
+
+
+    //just time
+    var weekDay = DateTime.Now.Date.ToShortDateString();
+
+    //search bar-category bar
+    var search_request = "";
+    var category_request = "";
+
+    //logout
+    var Logout = "";
+
+    if (IsPost)
+    {
+        search_request = Request.Form["search"];
+        category_request = Request.Form["category-filter"];
+        Logout = Request["Logout"];
+
+        if (!Logout.IsEmpty())
+        {
+            Session["use_id"] = null;
+        }
+        if (!category_request.IsEmpty())
+        {
+            movies = movies.Where(x => x.SubCategory.Contains(category_request));//from m in movies where m.SubCategory.Contains(category_request) select m;
+        }
+
+        if (!search_request.IsEmpty())
+        {
+            movies = movies.Where(x => x.Title.Contains(search_request));//from m in movies where m.Title.Contains(search_request) select m;
+        }
+
+    }
+    grid = new WebGrid(source: movies, defaultSort: "Title", rowsPerPage: 100);
+
+}
+
+
+<main>
+    <div id="day">@weekDay</div>
+    <div class="form">
+        <form action="" method="post">
+            <label for="search">Search</label>
+            <input id="search" name="search" type="search" value="@search_request">
+            <label for="category-filter">Select subcategory</label>
+            <select id="category-filter" name="category-filter">
+                <option value=""></option>
+                @foreach (var x in subCat)
+            {
+                    <option @if (x == category_request) { <text> selected</text> } value="@x">@x</option>
+                }
+            </select>
+            <button type="submit">Apply</button>
+        </form>
+    </div>
+    @if (Session["use_id"] == null) //no log on
+    {<div>
+        @grid.GetHtml(tableStyle: "webgrid-table",
+           headerStyle: "webgrid-header",
+           alternatingRowStyle: "webgrid-alternating-row",
+           selectedRowStyle: "webgrid-selected-row",
+           rowStyle: "webgrid-row-style",
+           mode: WebGridPagerModes.All,
+           columns: grid.Columns(
+           grid.Column("Title", "Title"),
+           grid.Column("Director", "Director"),
+           grid.Column("DateRel", "Year", format: (item) => item.DateRel.Year)))
+    </div>
+    }
+    else //here there is a session
+    {
+        <div class="form_add">Welcome @Session["use_id"]: 
+            <form action="~/AddMovie.cshtml">
+                <input type="submit" name="Add Movie!" value="Add Movie!" />
+            </form>
+            <form method="post">
+                <input type="submit" name="Logout" value="Logout">
+            </form>
+        </div>
+        <div>
+           @grid.GetHtml(tableStyle: "webgrid-table",
+           headerStyle: "webgrid-header",
+           alternatingRowStyle: "webgrid-alternating-row",
+           selectedRowStyle: "webgrid-selected-row",
+           rowStyle: "webgrid-row-style",
+           mode: WebGridPagerModes.All,
+           columns: grid.Columns(
+           grid.Column("Title", "Title"),
+           grid.Column("Director", "Director"),
+           grid.Column("DateRel", "Year", format: (item) => item.DateRel.Year),
+           grid.Column("SubCategory", "Sub-Category"),
+           grid.Column("Link1", "Imdb-link", format:@<text>
+            <a href="@item.Link1">imdb</a></text>)))
+        </div>      
+    }
+</main>
