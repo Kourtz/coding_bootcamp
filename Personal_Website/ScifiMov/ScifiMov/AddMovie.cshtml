@@ -11,9 +11,11 @@
     var director = "";
     var link = "";
     Movie new_movie;
+}
 
+<h1>New Sci-fi Movie</h1>
 
-    if (IsPost)
+   @if (IsPost)
     {
         title = Request.Form["title"];
         subcategory = Request.Form["subcategory"];
@@ -43,16 +45,14 @@
         }
         else
         {
-            <text><div class="warns">This movie is listed.<a href="~/AddMovie.cshtml"> Add</a> another movie.</div></text>
+            <text><div class="reg">This movie is listed.<a href="~/AddMovie.cshtml"> Add</a> another movie.</div></text>
         }
     }
-}
-
 
 @if (Session["use_id"] != null)
 {
 <form class="new-movie" method="post">
-    <h2>New Sci-fi Movie</h2>
+    <fieldset>
         <table>
             <tr>
                 <td>Title:</td>
@@ -74,11 +74,15 @@
                 <td>Imdb link(optional):</td>
                 <td><input type="text" name="link" id="link" value="@link"></td>
             </tr>
-            <tr>
-                <td><input type="submit" name="Submit" value="Submit"> <input type="reset" name="clear" value="Clear fields"></td>
+            <tr><td></td>
+                <td>
+                    <input type="submit" name="Submit" value="Submit"> <input type="reset" name="clear" value="Clear fields">
+                </td>
             </tr>
         </table>
+     </fieldset>
 </form>
+<form class="return" action="~/Home.cshtml" method="post"><input type="submit" name="Return" value="Return"></form>
 }
 else
 {

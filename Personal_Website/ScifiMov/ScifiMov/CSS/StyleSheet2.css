@@ -1,9 +1,9 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=greek');
 
 body {
+    background-image:url(aa.png);
     font-family: 'Open Sans', sans-serif;
-    background-color:antiquewhite;
-    font-size:larger
+    font-size:larger;
 }
 
 
@@ -43,7 +43,7 @@ div.reg a{color:#3966A2;}
 
 .webgrid-table {
 font-size:large;     
-width: 70% ;border:none;
+width: 75% ;border:none;
 padding: 6px 5px;
 margin:auto;
 text-align: left;
@@ -73,7 +73,7 @@ border-right: 2px solid #D6E8FF;
 .webgrid-alternating-row 
 {
     height: 50px;
-    background-color: #f2f2f2;
+    background-color: #D6E8FF;
     border-bottom: 1px solid #d2d2d2;
     border-left: 2px solid #D6E8FF;
     border-right: 2px solid #D6E8FF;
@@ -98,7 +98,7 @@ border-right: 2px solid #D6E8FF;
 
 .SubColumn{
     font-size:16px;
-    text-align :center;
+    width:300px;
 }
 
 .LinkColumn{
@@ -108,12 +108,31 @@ border-right: 2px solid #D6E8FF;
 
 
 button{
-    font-size:14px
+    font-size:14px;
+    height: 2em;
 }
 
 input{
-    font-size:14px
+    font-size:14px;
+    height: 2em;
 }
 
-fieldset {align-items:center; width:300px; margin:auto}
+.AddMovie{
+    height: 10em;
+}
+
+select{
+    height:2em;
+}
+
+
+fieldset {align-items:center; width:400px; padding:10px; margin:auto; background-color:beige}
 fieldset.h1{text-align:center; margin:auto; margin-bottom:500px}
+
+.warns{font-weight: bold;}
+.reg{font-weight: bold;}
+
+.Link a:link{color:black;}
+
+
+

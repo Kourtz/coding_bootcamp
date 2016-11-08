@@ -55,9 +55,9 @@
     <div id="day">@weekDay</div>
     <div class="form">
         <form action="" method="post">
-            <label for="search">Search</label>
+            <label for="search">Search:</label>
             <input id="search" name="search" type="search" value="@search_request">
-            <label for="category-filter">Select subcategory</label>
+            <label for="category-filter">Select Subcategory:</label>
             <select id="category-filter" name="category-filter">
                 <option value=""></option>
                 @foreach (var x in subCat)
@@ -78,15 +78,15 @@
            mode: WebGridPagerModes.All,
            columns: grid.Columns(
            grid.Column("Title", "Title", style:"TitleColumn"),
-           grid.Column("Director", "Director", style: "DirColumn"),
+           grid.Column("SubCategory", "Sub-Category", style: "SubColumn"),
            grid.Column("DateRel", "Year", style: "DateColumn", format: (item) => item.DateRel.Year)))
     </div>
     }
     else //here there is a session
     {
-        <div class="form_add">Welcome @Session["use_id"]: 
+        <div class="form_add"><b>Welcome @Session["use_id"]:</b> 
             <form action="~/AddMovie.cshtml">
-                <input type="submit" name="Add Movie!" value="Add Movie!" />
+                <input class="AddMov" type="submit" name="Add Movie!" value="Add Movie!" />
             </form>
             <form method="post">
                 <input type="submit" name="Logout" value="Logout">
@@ -101,9 +101,9 @@
            mode: WebGridPagerModes.All,
            columns: grid.Columns(
            grid.Column("Title", "Title", style: "TitleColumn"),
-           grid.Column("Director", "Director"),
-           grid.Column("DateRel", "Year", style: "DateColumn", format: (item) => item.DateRel.Year),
            grid.Column("SubCategory", "Sub-Category", style: "SubColumn"),
+           grid.Column("Director", "Director"),
+           grid.Column("DateRel", "Year", style: "DateColumn", format: (item) => item.DateRel.Year),          
            grid.Column("Link1", "Imdb-link",style: "LinkColumn", format:@<text>
             <a href="@item.Link1">imdb</a></text>)))
         </div>      

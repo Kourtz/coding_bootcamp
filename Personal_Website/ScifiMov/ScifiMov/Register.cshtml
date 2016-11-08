@@ -9,8 +9,10 @@
     var reg_email = "";
     var db = new Model();
     User us;
+}
 
-    if (IsPost)
+<h1>Registration Form</h1>
+    @if (IsPost)
     {
         reg_username = Request.Form["username"];
         reg_email = Request.Form["email"];
@@ -26,38 +28,35 @@
             db.Users.Add(user);
             db.SaveChanges();
             Session["use_id"] = user.UserName;  //now session is not null
-            <text><div class="reg">You are now register as @user.UserName<br>Go to<a href="~/Home.cshtml"> movies</a> and add your favorite sci-fi movies!</div></text>
+            <text><div class="reg">You are now register as @user.UserName .Go to<a class="Link" href="~/Home.cshtml"> movies</a> and add your favorite sci-fi movies!</div></text>
         }
         else
         {
             <text><div class="reg">You are already register as @us.UserName<br>Login<a href="~/Login.cshtml"> here</a></div></text>
         }
     }
-}
 
 @if (Session["use_id"] == null)
 {
-<main>
-    <h1>Registration Form</h1>
-    <fieldset>
-        <legend>Personal Data</legend>
-        <form action="" method="post">
-            <table>
-                <tr>
-                    <td>Username:</td>
-                    <td><input type="text" name="username" id="name" value="@reg_username" required></td>
-                </tr>
-                <tr>
-                    <td>Email:</td>
-                    <td><input type="email" name="email" id="email" value="@reg_email" required></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="submit" name="Register" value="Register"> <input type="reset" name="clear" value="Clear fields"></td>
-                </tr>
-            </table>
+<main>     
+     <form action="" method="post">
+            <fieldset>
+                <table>
+                    <tr>
+                        <td>Username:</td>
+                        <td><input type="text" name="username" id="name" value="@reg_username" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email" id="email" value="@reg_email" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" name="Register" value="Register"> <input type="reset" name="clear" value="Clear fields"></td>
+                    </tr>
+                </table>
+           </fieldset>
         </form>
-    </fieldset>
 </main>
 }
 else
