@@ -77,9 +77,9 @@
            rowStyle: "webgrid-row-style",
            mode: WebGridPagerModes.All,
            columns: grid.Columns(
-           grid.Column("Title", "Title"),
-           grid.Column("Director", "Director"),
-           grid.Column("DateRel", "Year", format: (item) => item.DateRel.Year)))
+           grid.Column("Title", "Title", style:"TitleColumn"),
+           grid.Column("Director", "Director", style: "DirColumn"),
+           grid.Column("DateRel", "Year", style: "DateColumn", format: (item) => item.DateRel.Year)))
     </div>
     }
     else //here there is a session
@@ -100,11 +100,11 @@
            rowStyle: "webgrid-row-style",
            mode: WebGridPagerModes.All,
            columns: grid.Columns(
-           grid.Column("Title", "Title"),
+           grid.Column("Title", "Title", style: "TitleColumn"),
            grid.Column("Director", "Director"),
-           grid.Column("DateRel", "Year", format: (item) => item.DateRel.Year),
-           grid.Column("SubCategory", "Sub-Category"),
-           grid.Column("Link1", "Imdb-link", format:@<text>
+           grid.Column("DateRel", "Year", style: "DateColumn", format: (item) => item.DateRel.Year),
+           grid.Column("SubCategory", "Sub-Category", style: "SubColumn"),
+           grid.Column("Link1", "Imdb-link",style: "LinkColumn", format:@<text>
             <a href="@item.Link1">imdb</a></text>)))
         </div>      
     }
