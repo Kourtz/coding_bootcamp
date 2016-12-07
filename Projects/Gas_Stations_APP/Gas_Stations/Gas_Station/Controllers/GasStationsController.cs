@@ -8,6 +8,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Gas_Station.Models;
+using PagedList;
+using UnidecodeSharpFork;
 
 namespace Gas_Station.Controllers
 {
@@ -16,7 +18,7 @@ namespace Gas_Station.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: GasStations
-        public async Task<ActionResult> Index(string sortOrder, string id, string selectMun)
+        public async Task<ActionResult> Index(string sortOrder, string id, string selectMun,string selectBrand, string currentFilter,int? page)
         {
             
             string searchString = id;
@@ -25,21 +27,57 @@ namespace Gas_Station.Controllers
             var Munlist = new List<string>();
             var MunQry = from x in db.GasStations orderby x.Municipality select x.Municipality;
             Munlist.AddRange(MunQry.Distinct());
+
+            var BrandList = new List<string>();
+            var BrandQry = from x in db.GasStations orderby x.Brand select x.Brand;
+            BrandList.AddRange(BrandQry.Distinct());
+
             ViewBag.selectMun = new SelectList(Munlist);
+
+            if (selectMun != null)
+            {
+              BrandList = db.GasStations.Where(x => x.Municipality == selectMun).OrderBy(x => x.Brand).Select(x => x.Brand).Distinct().ToList();
+            }
+            ViewBag.selectBrand = new SelectList(BrandList);
+
 
             ViewBag.PriceSort = String.IsNullOrEmpty(sortOrder) ? "price_desc" : "";
             ViewBag.DateSort = sortOrder == "Date" ? "date_desc" : "Date";
             ViewBag.BrandSort = sortOrder == "Brand" ? "Brand_desc" : "Brand";
             ViewBag.MunSort = sortOrder == "Mun" ? "Mun_desc" : "Mun";
 
+            ViewBag.CurrentSort = sortOrder;
+
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewBag.CurrentFilter = searchString;
+            ViewBag.CurrentMun = selectMun;
+            ViewBag.CurrentBrand = selectBrand;
+
+
             if (!String.IsNullOrEmpty(searchString))
             {
-                gasStasions = gasStasions.Where(x => x.Address.Contains(searchString) || x.Name.Contains(searchString) || x.Municipality.Contains(searchString) || x.County.Contains(searchString) || x.Brand.Contains(searchString) || x.Dep.Contains(searchString));
+                
+                gasStasions = gasStasions.Where(x => x.Name.ToUpper().Contains(searchString.ToUpper()) || x.Address.ToUpper().Contains(searchString.ToUpper()) || x.Municipality.ToUpper().Contains(searchString.ToUpper()) || x.Dep.ToUpper().Contains(searchString.ToUpper()) || x.Brand.ToUpper().Contains(searchString.ToUpper()) || x.County.ToUpper().Contains(searchString.ToUpper()));
+
+                    //.Contains(searchString) || x.Municipality.Contains(searchString) || x.County.Contains(searchString) || x.Brand.Contains(searchString) || x.Dep.Contains(searchString)));
             }
 
             if (!String.IsNullOrEmpty(selectMun))
             {
                 gasStasions = gasStasions.Where(x => x.Municipality == selectMun);   
+            }
+
+            if (!String.IsNullOrEmpty(selectBrand))
+            {
+                gasStasions = gasStasions.Where(x => x.Brand == selectBrand);
             }
 
             switch (sortOrder)
@@ -70,7 +108,44 @@ namespace Gas_Station.Controllers
                     break;
             }
 
-            return View(await gasStasions.ToListAsync());
+            int pageSize = 30;
+            int pageNumber = (page ?? 1);
+
+            return View(gasStasions.ToPagedList(pageNumber, pageSize));
+        }
+
+        public JsonResult DynamicListBrands(string mun)
+        {
+            //var BrandList = new List<string>();
+            var BrandList = db.GasStations.Where(x => x.Municipality == mun).OrderBy(x => x.Brand).Select(x => x.Brand).Distinct().ToList();
+            List<SelectListItem> BrandSelectList = BrandList.Select(x => new SelectListItem { Text = x, Value = x }).ToList();
+            //var BrandQry = from x in gasstations orderby x.Brand select x.Brand;
+            //BrandList.AddRange(BrandQry.Distinct());
+            //System.Console.Write(BrandList);
+            BrandSelectList.Insert(0, new SelectListItem { Text = "All", Value = null });
+            return Json(new SelectList(BrandSelectList,"Value","Text")); 
+        }
+
+        //public JsonResult DynamicListMuns(string brand)
+        //{
+        //    var MunList = db.GasStations.Where(x => x.Brand == brand).OrderBy(x => x.Municipality).Select(x => x.Municipality).Distinct().ToList();
+        //    List<SelectListItem> MunSelectList = MunList.Select(x => new SelectListItem { Text = x, Value = x }).ToList();
+        //    MunSelectList.Insert(0, new SelectListItem { Text = "All", Value = null });
+        //    return Json(new SelectList(MunSelectList, "Value", "Text"));
+        //}
+
+
+        public JsonResult DynamicSearch(string text)
+        {
+            var list = new List<string>();
+            var MunQry = from x in db.GasStations orderby x.Municipality select x.Municipality;
+            var BrandQry = from x in db.GasStations orderby x.Brand select x.Brand;
+            list.AddRange(MunQry.Distinct());
+            list.AddRange(BrandQry.Distinct());
+
+            var filter = list.Where(x => x.StartsWith(text));
+
+            return Json(filter, JsonRequestBehavior.AllowGet);
         }
 
         // GET: GasStations/Details/5
@@ -104,6 +179,7 @@ namespace Gas_Station.Controllers
         {
             if (ModelState.IsValid)
             {
+                gasStation.PriceUpdate = DateTime.Now;
                 db.GasStations.Add(gasStation);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -138,6 +214,7 @@ namespace Gas_Station.Controllers
         {
             if (ModelState.IsValid)
             {
+                gasStation.PriceUpdate = DateTime.Now;
                 db.Entry(gasStation).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

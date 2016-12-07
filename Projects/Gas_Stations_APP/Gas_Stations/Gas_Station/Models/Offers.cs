@@ -18,6 +18,8 @@ namespace Gas_Station.Models
         public decimal Price { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateExpired { get; set; }
-        public GasStation GasStation { get; set; }
+        public int GasStationId { get; set; }
+        public virtual GasStation GasStation { get; set; }
+        //public int GasStationId { get; set; }
     }
 }

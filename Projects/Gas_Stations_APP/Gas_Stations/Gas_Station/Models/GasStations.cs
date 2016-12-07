@@ -24,6 +24,7 @@ namespace Gas_Station.Models
         public double Longitude { get; set; }
         [DisplayFormat(DataFormatString = "{0:0.000}")]
         public double Price { get; set; }
+
         public DateTime PriceUpdate { get; set; }
         public string FuelType { get; set; }
         public string Name { get; set; }

@@ -37,7 +37,7 @@ namespace Gas_Station
                 roleManager.Create(role);
             }
 
-            ////Create an Admin
+            //////Create an Admin
             //var user = new ApplicationUser();
             //user.UserName = "xkourtz@hotmail.com";
             //user.Email = "xkourtz@hotmail.com";

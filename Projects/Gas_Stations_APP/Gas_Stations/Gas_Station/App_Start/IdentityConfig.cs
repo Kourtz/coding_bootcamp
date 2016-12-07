@@ -56,7 +56,7 @@ namespace Gas_Station
                 RequiredLength = 6,
                 RequireNonLetterOrDigit = false,
                 RequireDigit = true,
-                RequireLowercase = false,
+                RequireLowercase = true,
                 RequireUppercase = false,
             };
 

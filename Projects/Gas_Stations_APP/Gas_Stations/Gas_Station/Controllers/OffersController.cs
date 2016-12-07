@@ -78,6 +78,7 @@ namespace Gas_Station.Controllers
         [Authorize(Roles = "Admin")]
         public ActionResult Create()
         {
+            //var offer=new Offer() { GasStation=id}
             return View();
         }
 
@@ -86,10 +87,15 @@ namespace Gas_Station.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Type,Description,Price,DateCreated,DateExpired")] Offer offer)
+        public ActionResult Create(/*[Bind(Include = "Id,Type,Description,Price,DateCreated,DateExpired")]*/ Offer offer)
         {
             if (ModelState.IsValid)
             {
+                GasStation gasstation = db.GasStations.Find(offer.GasStationId);
+                offer.GasStationId = gasstation.Id;
+                offer.GasStation = gasstation;
+                offer.DateCreated = DateTime.Now;
+                offer.DateExpired = DateTime.Now.AddDays(30);
                 db.Offers.Add(offer);
                 db.SaveChanges();
                 return RedirectToAction("Index");
