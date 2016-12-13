@@ -136,7 +136,7 @@ namespace Exercise4
 
         static void Main(string[] args)
         {
-            TestFile test = new TestFile(@"C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise4\Exercise4\Program.cs");
+            TestFile test = new TestFile(@"C:\Projects\DesignPatterns\Exercise4\Exercise4\Program.cs");
 
             test.Count(new Method2());
 
