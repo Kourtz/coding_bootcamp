@@ -49,13 +49,13 @@ namespace Exercise2
         {
             Utilities test = new Utilities();
 
-            //StreamWriter note2 = new StreamWriter("C:\\Users\\xkour\\Desktop\\Hello.txt", true);
+            //StreamWriter note2 = new StreamWriter("C:\\Hello.txt", true);
             //test.Write(note2, "Hello");
 
-            //StreamReader note1 = new StreamReader("C:\\Users\\xkour\\Desktop\\Hello.txt");
+            //StreamReader note1 = new StreamReader("C:\\Hello.txt");
             //test.Read(note1);
 
-            StreamReader note3 = new StreamReader("C:\\Users\\xkour\\Desktop\\Hello.txt");
+            StreamReader note3 = new StreamReader("C:\\Hello.txt");
             test.GetString(note3);
             Console.WriteLine(test.text);
             Console.ReadLine();
