@@ -1,0 +1,6 @@
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise2\bin\Debug\Exercise2.exe.config
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise2\bin\Debug\Exercise2.exe
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise2\bin\Debug\Exercise2.pdb
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise2\obj\Debug\Exercise2.csprojResolveAssemblyReference.cache
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise2\obj\Debug\Exercise2.exe
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise2\obj\Debug\Exercise2.pdb

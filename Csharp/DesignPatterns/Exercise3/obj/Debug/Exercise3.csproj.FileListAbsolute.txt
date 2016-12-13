@@ -1,0 +1,18 @@
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise3\bin\Debug\Exercise3.exe.config
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise3\bin\Debug\Exercise3.exe
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise3\bin\Debug\Exercise3.pdb
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise3\obj\Debug\Exercise3.csprojResolveAssemblyReference.cache
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise3\obj\Debug\Exercise3.exe
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise3\obj\Debug\Exercise3.pdb
+C:\Users\xkour\Desktop\Exercise3\bin\Debug\Exercise3.exe.config
+C:\Users\xkour\Desktop\Exercise3\obj\Debug\Exercise3.exe
+C:\Users\xkour\Desktop\Exercise3\obj\Debug\Exercise3.pdb
+C:\Users\xkour\Desktop\Exercise3\bin\Debug\Exercise3.exe
+C:\Users\xkour\Desktop\Exercise3\bin\Debug\Exercise3.pdb
+C:\Users\xkour\Desktop\Exercise3\obj\Debug\Exercise3.csprojResolveAssemblyReference.cache
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise4\Exercise3\bin\Debug\Exercise3.exe.config
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise4\Exercise3\obj\Debug\Exercise3.exe
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise4\Exercise3\obj\Debug\Exercise3.pdb
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise4\Exercise3\bin\Debug\Exercise3.exe
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise4\Exercise3\bin\Debug\Exercise3.pdb
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\DesignPatterns\Exercise4\Exercise3\obj\Debug\Exercise3.csprojResolveAssemblyReference.cache
