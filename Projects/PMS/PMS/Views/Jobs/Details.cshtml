@@ -1,0 +1,148 @@
+﻿@model PMS.Models.Job
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <h4>Ship Activity</h4>
+    <dl class="dl-horizontal">
+        <dt>
+            Ship:
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.job.ship.Name)
+        </dd>
+        <dt>
+            Activity Id:
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.job.ActivityId)
+        </dd>
+        <dt>
+            Maintenance Type:
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.job.activity.MaintenanceType), @Html.DisplayFor(model => model.job.activity.Name)
+        </dd>
+    </dl>
+
+    <h4>Component</h4>
+    <dl class="dl-horizontal">
+        <dt>
+            Component Id:
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.job.activity.ComponentId)
+        </dd>
+        <dt>
+            Component Category:
+        </dt>
+        @if (Model.job.activity.Component.Category.ParentId.HasValue)
+        {
+            <dd>
+                @Html.DisplayFor(model => model.job.activity.Component.Category.Parent.Name), @Html.DisplayFor(model => model.job.activity.Component.Category.Name)
+            </dd>
+        }
+        else
+        {
+            <dd>
+                @Html.DisplayFor(model => model.job.activity.Component.Category.Name)
+            </dd>
+        }
+
+        <dt>
+            Component Name:
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.job.activity.Component.Name)
+        </dd>
+        <dt>
+            Designation:
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.job.activity.Component.Designation)
+        </dd>
+    </dl>
+
+    <h4>Job Details</h4>
+    <dl class="dl-horizontal">
+        <dt>
+            Job Description:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            Status:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+        @if (Model.DueDate.HasValue)
+        {
+            <dt>
+                Due Date:
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DueDate)
+            </dd>
+        }
+
+        @if (Model.DueRunningHours.HasValue)
+        {
+            <dt>
+                Due RHours:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DueRunningHours)
+            </dd>
+
+            <dt>
+                Last Done RHours:
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.LastDoneRunningHours)
+            </dd>
+        }
+
+        <dt>
+            Last Done:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastDone)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Critical):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Critical)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

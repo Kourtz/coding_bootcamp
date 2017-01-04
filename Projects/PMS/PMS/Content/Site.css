@@ -1,0 +1,68 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select
+ {
+    max-width: 50%;
+}
+
+/*textarea{
+    width:50%;
+    column-count:auto;
+}*/
+
+
+#main{width:130%;
+}
+
+th{
+    background-color:gray;
+    color:black;
+}
+
+#headd{
+    width:100%;
+    height:50px;
+}
+
+
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+
+.checkbox-form {
+    padding-top: 5px;
+}
+
+/*a#links
+a#links:active
+a#links:link
+a#links:visited{
+    color:black !important;
+}*/
+
+#filtering{
+    height:50px;
+}
+
+/*select#selectShip{
+    width:100px;
+    height:25px;
+}*/

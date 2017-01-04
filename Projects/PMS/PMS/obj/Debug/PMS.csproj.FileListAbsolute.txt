@@ -1,0 +1,207 @@
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\ApplicationInsights.config
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\csc.exe
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\csc.exe.config
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\csc.rsp
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\csi.exe
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\csi.rsp
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\System.AppContext.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\vbc.exe
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\vbc.exe.config
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\vbc.rsp
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\VBCSCompiler.exe
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\PMS.dll.config
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\PMS.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\PMS.pdb
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Antlr3.Runtime.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\EntityFramework.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\EntityFramework.SqlServer.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AI.Web.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Security.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Newtonsoft.Json.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Owin.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\PagedList.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\PagedList.Mvc.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\System.Web.Helpers.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\System.Web.Mvc.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\System.Web.Optimization.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\System.Web.Razor.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\System.Web.WebPages.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\System.Web.WebPages.Razor.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\WebGrease.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Antlr3.Runtime.pdb
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AI.Web.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Newtonsoft.Json.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\PagedList.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\PagedList.Mvc.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\System.Web.Helpers.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\System.Web.Mvc.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\System.Web.Optimization.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\System.Web.Razor.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\System.Web.WebPages.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\System.Web.WebPages.Razor.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\EntityFramework.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\EntityFramework.SqlServer.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Security.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.csprojResolveAssemblyReference.cache
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.dll
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.pdb
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Migrations.InitialCreate.resources
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.csproj.GenerateResource.Cache
+C:\Users\xkour\OneDrive\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Migrations.second.resources
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\ApplicationInsights.config
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\csc.exe
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\csc.exe.config
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\csc.rsp
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\csi.exe
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\csi.rsp
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\System.AppContext.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\vbc.exe
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\vbc.exe.config
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\vbc.rsp
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\VBCSCompiler.exe
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\PMS.dll.config
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\PMS.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\PMS.pdb
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Antlr3.Runtime.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\EntityFramework.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\EntityFramework.SqlServer.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AI.Web.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Security.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Newtonsoft.Json.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Owin.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\PagedList.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\PagedList.Mvc.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\System.Web.Helpers.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\System.Web.Mvc.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\System.Web.Optimization.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\System.Web.Razor.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\System.Web.WebPages.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\System.Web.WebPages.Razor.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\WebGrease.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Antlr3.Runtime.pdb
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AI.Web.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Newtonsoft.Json.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\PagedList.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\PagedList.Mvc.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\System.Web.Helpers.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\System.Web.Mvc.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\System.Web.Optimization.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\System.Web.Razor.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\System.Web.WebPages.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\System.Web.WebPages.Razor.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\EntityFramework.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\EntityFramework.SqlServer.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Security.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\obj\Debug\PMS.csprojResolveAssemblyReference.cache
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\obj\Debug\PMS.Migrations.InitialCreate.resources
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\obj\Debug\PMS.Migrations.second.resources
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\obj\Debug\PMS.csproj.GenerateResource.Cache
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\obj\Debug\PMS.dll
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\obj\Debug\PMS.pdb
+C:\Users\xkour\Desktop\PM\Project\PMS\PMS\obj\Debug\PMS.Migrations.date1.resources

@@ -1,0 +1,223 @@
+﻿@model PMS.Models.Job
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>New Job</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.job.ship.Name, "Ship", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Ships", (SelectList)ViewBag.Ships,"", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.job.ship.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.job.activity.Component.Designation, "Designation", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Designation", (SelectList)ViewBag.Designation,"", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.job.activity.Component.Designation, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.job.activity.Name, "Type", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("ActivityName",(SelectList)ViewBag.ActivityName, "", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.job.activity.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.ShipActivityId, "ShipActivityId", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("ShipActivityId", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.ShipActivityId, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.job.activity.MaintenanceType, "Maintenance Type", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EnumDropDownListFor(model => model.job.activity.MaintenanceType, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.job.activity.MaintenanceType, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, "Description", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaintanceDuration, "Duration in", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EnumDropDownListFor(model => model.MaintanceDuration, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaintanceDuration, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group">
+                @Html.LabelFor(model => model.status, "Status", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EnumDropDownListFor(model => model.status, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.status, "", new { @class = "text-danger" })
+                </div>
+            </div>*@
+
+        <div id="DueD" class="form-group" style="display:none">
+            @Html.LabelFor(model => model.DueDate, "Due Date", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DueDate, new { htmlAttributes = new { @class = "form-control datepicker" } })
+                @Html.ValidationMessageFor(model => model.DueDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div id="LastD" class="form-group">
+            @Html.LabelFor(model => model.LastDone, "Last Done", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LastDone, new { htmlAttributes = new { @class = "form-control datepicker" } })
+                @Html.ValidationMessageFor(model => model.LastDone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div id="DueRH" class="form-group">
+            @Html.LabelFor(model => model.DueRunningHours, "Due Running Hours", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DueRunningHours, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DueRunningHours, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div id="LastRH" class="form-group">
+            @Html.LabelFor(model => model.LastDoneRunningHours, "Last Done Running Hours", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LastDoneRunningHours, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LastDoneRunningHours, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Critical, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox-form">
+                    @Html.CheckBoxFor(model => model.Critical, new { htmlAttributes = new { @class = "checkbox-form" } })
+                    @Html.ValidationMessageFor(model => model.Critical, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Comments, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Comments, 10, 116, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Comments, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-success" />
+        </div>
+    </div>
+
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval"),
+    @Scripts.Render("~/bundles/jqueryui"),
+    @Styles.Render("~/Content/cssjqryUi")
+}
+
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/bootstrap-datetimepicker.js"></script>
+<script src="~/Scripts/bootstrap-datetimepicker.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        //Dropdownlist Selectedchange event
+        $("#Ships").change(function () {
+            $("#Designation").empty();
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("DynamicDesignation")',
+                dataType: 'json',
+                data: { ship: $("#Ships").val() },
+                success: function (DesignSelectList) {
+                    // states contains the JSON formatted list
+                    // of states passed from the controller
+                    $.each(DesignSelectList, function (i, brand) {
+                        $("#Designation").append('<option value="' + brand.Value + '">' + brand.Text + '</option>');
+                    });
+                },
+                error: function (ex) {
+                    alert('Failed to retrieve attributes.' + ex);
+                }
+            });
+            return false;
+        })
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        //Dropdownlist Selectedchange event
+        $("#Designation").change(function () {
+            $("#ActivityName").empty();
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("DynamicActName")',
+                dataType: 'json',
+                data: { design: $("#Designation").val() },
+                success: function (ActNameSelectList) {
+                    // states contains the JSON formatted list
+                    // of states passed from the controller
+                    $.each(ActNameSelectList, function (i, brand) {
+                        $("#ActivityName").append('<option value="' + brand.Value + '">' + brand.Text + '</option>');
+                    });
+                },
+                error: function (ex) {
+                    alert('Failed to retrieve attributes.' + ex);
+                }
+            });
+            return false;
+        })
+    });
+</script>
+<script>
+    $('#MaintanceDuration').change(function (e) {
+        if ($('#MaintanceDuration').val() == '0') {
+            $('#DueRH').show();
+            $('#LastRH').show();
+            $('#DueD').hide();
+            //$('#LastD').hide();
+        } else {
+            $('#DueD').show();
+            //$('#LastD').show();
+            $('#DueRH').hide();
+            $('#LastRH').hide();
+        }
+    });
+</script>
+<script type="text/javascript">
+    $(function () { // will trigger when the document is ready
+        $('.datepicker').datepicker({ dateFormat: 'dd/MM/yy' }); //Initialise any date pickers
+    });
+</script>

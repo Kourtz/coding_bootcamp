@@ -1,0 +1,152 @@
+﻿@model IEnumerable<PMS.Models.Job>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Work Plan</h2>
+
+<p>
+    @Html.ActionLink("Add New Job", "Create")
+</p>
+
+@using (Html.BeginForm("Index", "Jobs", FormMethod.Get))
+{
+    <div id="filtering">
+        @Html.DropDownList("selectShip", (SelectList)ViewBag.selectShip, "---Select Ship---", new
+                { @style = "width:150px;height:25px;" })
+        @Html.DropDownList("status", (SelectList)ViewBag.selectStatus, "---Select Status---", new
+                { @style = "width:150px;height:25px;" })
+        <input type="submit" value="Filter" class="btn btn-primary btn-md" /><br />
+    </div>
+}
+
+<table class="table table-striped table-bordered">
+    <thead class="thread-inverse">
+        <tr>
+            <th>
+                @Html.ActionLink("Ship", "Index", new { SortOrder = ViewBag.ShipSort, selectShip = ViewBag.CurrentShip, status= ViewBag.CurrentStatus
+                    }, new { style = "color:black;" })
+            </th>
+            <th>
+                @Html.ActionLink("Category", "Index", new { SortOrder = ViewBag.CategorySort, selectShip = ViewBag.CurrentShip, status = ViewBag.CurrentStatus }, new { style = "color:black;" })
+            </th>
+            <th>
+                @Html.ActionLink("Component Name", "Index", new { SortOrder = ViewBag.CompNameSort, selectShip = ViewBag.CurrentShip, status = ViewBag.CurrentStatus }, new { style = "color:black;" })
+            </th>
+            <th>
+                @Html.ActionLink("Designation", "Index", new { SortOrder = ViewBag.DesignSort, selectShip = ViewBag.CurrentShip, status = ViewBag.CurrentStatus }, new { style = "color:black;" })
+            </th>
+            <th>
+                @Html.ActionLink("Status", "Index", new { SortOrder = ViewBag.StatusSort, selectShip = ViewBag.CurrentShip, status = ViewBag.CurrentStatus }, new { style = "color:black;" })
+            </th>
+            <th>
+                Job Title
+            </th>
+            <th>
+                @Html.ActionLink("Type", "Index", new { SortOrder = ViewBag.TypeSort, selectShip = ViewBag.CurrentShip, status = ViewBag.CurrentStatus }, new { style = "color:black;" })
+            </th>
+            <th>
+                @Html.ActionLink("Due Date", "Index", new { SortOrder = ViewBag.DateSort, selectShip = ViewBag.CurrentShip, status = ViewBag.CurrentStatus }, new { style = "color:black;" })
+            </th>
+            <th>
+                Due Running Hours
+            </th>
+            <th>
+                Last Done
+            </th>
+            <th>
+                Last Done Run-hrs
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Critical)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            string style = null;
+            int days;
+            if (item.DueDate.HasValue)
+            {
+                TimeSpan daysleft = (item.DueDate.Value - DateTime.Now);
+                days = (int)daysleft.TotalDays;
+                if (days < 0)
+                {
+                    style = "background-color:lightcoral";
+                    item.status = PMS.Models.Status.Overdue;
+                }
+                else if (days <= 30)
+                {
+                    style = "background-color:NavajoWhite";
+                    item.status = PMS.Models.Status.Due;
+                }
+                else
+                {
+                    item.status = PMS.Models.Status.Scheduled;
+                }
+            }
+            <tr style="@style">
+                <td>
+                    @Html.DisplayFor(modelItem => item.job.ship.Name)
+                </td>
+                @if (item.job.activity.Component.Category.ParentId.HasValue)
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.job.activity.Component.Category.Parent.Name),@Html.DisplayFor(modelItem => item.job.activity.Component.Category.Name)
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.job.activity.Component.Category.Name)
+                    </td>
+                }
+                <td>
+                    @Html.DisplayFor(modelItem => item.job.activity.Component.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.job.activity.Component.Designation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.status)
+                </td>
+                <td id="longer">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.job.activity.MaintenanceType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DueDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DueRunningHours)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastDone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastDoneRunningHours)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Critical)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+
+        }
+    </tbody>
+
+</table>
+
+
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

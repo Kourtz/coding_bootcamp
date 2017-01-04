@@ -1,0 +1,104 @@
+﻿@model PMS.Models.Job
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Job</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.job.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.job.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaintanceDuration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaintanceDuration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DueDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DueDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastDone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastDone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DueRunningHours)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DueRunningHours)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastDoneRunningHours)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastDoneRunningHours)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Critical)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Critical)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
